@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+          <div class="title">
+            <button id="register">Register</button>
+            <button id="login">Login</button>
+          </div>
+          <div class="container-login">
+            <div class="google-login">
+              <i class="fa-brands fa-google"></i>
+              <span class="title-google"> Continue with Google </span>
+            </div>
+            <div class="google-login">
+              <i class="fa-brands fa-facebook"></i>
+              <span class="title-google"> Continue with Facebook </span>
+            </div>
+          </div>
+          <form id="form-add">
+            <div class="register-input">
+              <div>
+                <p>EMAIL</p>
+                <input
+                  type="email"
+                  placeholder="enter registration email"
+                  id="email"
+                />
+                <div class="validate" id="validate-email">Email is not vacant</div>
+              </div>
+              <div>
+                <p>USERNAME</p>
+                <input
+                  type="text"
+                  placeholder="Enter registration username"
+                  id="username"
+                />
+                <div class="validate" id="validate-name">Name cannot be left blank</div>
+              </div>
+              <div>
+                <p>PASSWORD</p>
+                <input
+                  type="password"
+                  placeholder="enter registration password"
+                  id="password1"
+                />
+                <div class="validate" id="validate-password">Password cannot be left blank</div>
+              </div>
+            </div>
+            <!-- <div class="messege">
+
+            </div> -->
+            <button id="buttom-register" class="btn-registes">Sign in</button>
+          </form>
+          <div class="bpceo8d">
+            <div class="a1cs70vk">
+              <span class="lghzn8f"
+                ><span
+                  >Do you have an account
+                  <button id="login1" class="UILink" type="button" style="background-color: #f4ecec00;">Login</button></span
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
+</html>

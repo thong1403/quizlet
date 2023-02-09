@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    background-image: url("https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+}
+.row{
+    margin-top: 30px;
+    padding: 5px;
+    box-shadow: grey;
+}
+.container{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.224);
+}
+.UIFieldset-fields{
+display: flex;
+height: 50px;
+}
+#email{
+width: 600px;
+height: 50px;
+border: 2px solid black;
+border-radius: 5px;
+padding-left: 10px;
+}
+#username{
+width: 600px;
+height: 50px;
+border: 2px solid black;
+border-radius: 5px;
+padding-left: 10px;
+
+}
+#password1{
+width: 600px;
+height: 50px;
+border: 2px solid black;
+border-radius: 5px;
+padding-left: 10px;
+
+}
+.notranslate{
+font-size: 20px;
+color: #939BB4;
+}
+.register-input{
+margin: 20px;
+}
+.col-6 #buttom-register{
+width: 95%;
+margin-left: 22px;
+margin-bottom: 20px;
+padding: 10px;
+background-color: #D9DDE8;
+border: 1px solid #D9DDE8;
+border-radius: 5px;
+font-size: 20px;
+color: white;
+}
+.UIDropdown-select{
+color: #3CCFCF;
+}
+.bpceo8d{
+border: 1px solid #D9DDE8;
+padding: 10px;
+width: 95%;
+text-align: center;
+border-radius: 5px;
+margin-left: 23px;
+
+}
+.UILink{
+border: none;
+color: #3CCFCF;
+background-color: white;
+}
+.UIDropdown--boxed{
+width: 150px;
+
+}
+.UIDiv{
+margin: 20px;
+}
+#register{
+font-size: 30px;
+border: none;
+margin-right: 20px;
+}
+#login{
+font-size: 30px;
+border: none;
+color: #D9DDE8;
+}
+.title{
+text-align: center;
+}
+.container-login{
+display: flex;
+justify-content: space-around;
+margin: 20px;
+
+}
+.google-login{
+font-size: 20px;
+padding: 10px;
+border: 1px solid #D9DDE8;
+border-radius: 5px;
+padding: 10px;
+}
+.title-google{
+font-size: 15px;
+}
+.img{
+width: 100%;
+height: 100%;
+}
+
+.btn-registes:hover{
+    cursor: pointer;
+    background-color: #a7b1cf !important;
+}
+.validate{
+    color: red;
+    font-size: 12px;
+    display: none;
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/solution.css" />
+    <title>SOLUTION</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:3000/"
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2021/11/Quizlet-Logo.png"
+            alt="photo"
+            id="img"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/">HOME</a>
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/users/solution"
+                >Expert solutions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your library</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Create
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-sharp fa-solid fa-copy"></i> Học phần</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-folder"></i> Thu mục</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-user-group"></i> Lớp</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span class="vip">Upgrade: free 7-day trial</span>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Study sets, textboo..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <button id="notification">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-sharp fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-user">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Progress</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Upgrade</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Help and feedback</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal -->
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Find step-by-step expert solutions</h1>
+          <h5>Millions of solutions for your toughest homework problems</h5>
+        </div>
+        <div class="col-12">
+          <input
+            type="search"
+            placeholder="Search textbooks, ISBNs, questions"
+            id="search"
+          />
+        </div>
+        <div class="col-12 toobar-add">
+          <h3 class="title">Browse by subject</h3>
+          <span class="toobar">Chemistry</span>
+          <span class="toobar">Calculus</span>
+          <span class="toobar">Engineering</span>
+          <span class="toobar">Linear Algebra</span>
+          <span class="toobar">Physics</span>
+          <span class="toobar">Biology</span>
+          <span class="toobar">Languages</span>
+          <span class="toobar">Business</span>
+        </div>
+        <div class="col-5 term">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/f0/5b/f05b21063194c1b8a8c430c213bdce16.jpg"
+            alt="photo"
+            class="img-term"
+          />
+          <div class="term-content">
+            <h3>Chemistry: The Central Science</h3>
+            <h6>14th Edition</h6>
+            <p>Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lem...</p>
+
+            <span class="solution-number">7,852 solution</span>
+          </div>
+        </div>
+        <div class="col-5 term">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/93/e0/93e0bb4901e3a1e6d9d963928d1d1bc9.jpg"
+            alt="photo"
+            class="img-term"
+          />
+          <div class="term-content">
+            <h4>Chemistry: The Molecolar Nature</h4>
+            <h6>14th Edition</h6>
+            <p>Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lem...</p>
+
+            <span class="solution-number">7,852 solution</span>
+          </div>
+        </div>
+        <div class="col-5 term">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/08/37/083703225d5b4f62381c6fffd012e7df.jpg"
+            alt="photo"
+            class="img-term"
+          />
+          <div class="term-content">
+            <h4>Chemistry: The Molecolar Nature</h4>
+            <h6>14th Edition</h6>
+            <p>Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lem...</p>
+
+            <span class="solution-number">7,852 solution</span>
+          </div>
+        </div>
+        <div class="col-5 term">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/81/6d/816de1f9efab9b705c98ad70792c0765.jpg"
+            alt="photo"
+            class="img-term"
+          />
+          <div class="term-content">
+            <h4>Chemistry: The Molecolar Nature</h4>
+            <h6>14th Edition</h6>
+            <p>Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lem...</p>
+
+            <span class="solution-number">7,852 solution</span>
+          </div>
+        </div>
+        <div class="col-5 term">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/8d/3f/8d3fcdc812de6ae2c0d2f91fec1b4a84.jpg"
+            alt="photo"
+            class="img-term"
+          />
+          <div class="term-content">
+            <h4>Chemistry: The Molecolar Nature</h4>
+            <h6>14th Edition</h6>
+            <p>Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lem...</p>
+
+            <span class="solution-number">7,852 solution</span>
+          </div>
+        </div>
+        <div class="col-5 term">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/62/2f/622f88fbfd4502941b87f4a7e4cdf69b.jpg"
+            alt="photo"
+            class="img-term"
+          />
+          <div class="term-content">
+            <h4>Chemistry: The Molecolar Nature</h4>
+            <h6>14th Edition</h6>
+            <p>Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lem...</p>
+
+            <span class="solution-number">7,852 solution</span>
+          </div>
+        </div>
+        <div class="col-12 title-our">
+          <h2>Our library of expert solutions continues to grow</h2>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/ba/43/ba43ab605d6aad364f071befd1b2653a.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Calculus: A Complete Course</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/f3/9b/f39bbe4262f208215275611f7c7d997a.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Engineering Economic Analysis</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/48/81/4881029f562d206d52caab1e1233872c.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Calculus</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/db/ef/dbef0606ead73c7a2095dd59850f9c01.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Calculus</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/70/60/706060a0279eda3e651c9e7d47bd90d1.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Chemistry</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/ec/3c/ec3c35b9de8e83bdb500d50a17c932e9.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Calculus: Early Transcendent</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/33/93/33930a6359cc5ba13ec0b7a0117f1fc7.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>Physics for Scientists and Engineersv...</h6>
+        </div>
+        <div class="col-1">
+          <img
+            src="https://d2nchlq0f2u6vy.cloudfront.net/cache/39/51/39512b54fdeb8722f2ae9eb62a209f0e.jpg"
+            alt="photo"
+            class="img-our"
+          />
+          <h6>마이어스의 심리학개론</h6>
+        </div>
+        <div class="row final">
+          <div class="col-8">
+            <div class="col-8 top">
+              <h2>Written by experts you can trust</h2>
+              <h6>
+                Each expert solution is developed and double-checked by a
+                subjeck-matter expert.
+              </h6>
+            </div>
+
+            <div class="col-8 one">
+              <h2>New textbook solutions added weekly</h2>
+            </div>
+            <div class="col-8 one">
+              <h2>Clear and organzed</h2>
+            </div>
+          </div>
+
+          <div class="col-4 img-left">
+            <img
+              src="https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=360,onerror=redirect,w=360/https://quizlet.com/_next/static/media/LP-WrittenByExpertsDay.d7870da1.svg"
+              alt="photo"
+              class="img-buttom"
+            />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

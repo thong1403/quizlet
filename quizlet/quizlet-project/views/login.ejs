@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row divlogin">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+          <div class="container-title">
+            <span id="register-top"> Register </span>
+            <span id="title"> Login </span>
+          </div>
+          <div class="container-login">
+            <i class="fa-brands fa-google"></i>
+            <span class="content"> <h3>Continue with Google</h3></span>
+          </div>
+          <div class="container-login">
+            <i class="fa-brands fa-facebook"></i>
+
+            <span class="content">
+              <h3>Continue with Facebook</h3>
+            </span>
+          </div>
+          <div class="container-login">
+            <i class="fa-brands fa-apple"></i>
+            <span class="content">
+              <h3>Continue with APPLE</h3>
+            </span>
+          </div>
+          <form id="form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              id="email"
+            />
+            <p class="title-input">EMAIL</p>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter password"
+              id="password"
+            />
+            <div class="reset-pass">
+              <span class="title-inp"> PASSWORD </span>
+            </div>
+            <p class="content-buttom">
+              When you log in, you consent
+              <span class="condition">Terms of Service</span> and
+              <span class="condition">Privacy Policy</span> by Quizlet
+            </p>
+            <button id="login">Log in</button>
+            <button id="register">
+                New to Quizlet
+              <span id="createAccount">Create Account</span>
+            </button>
+          </form>
+        </div>
+        <div class="col-3">
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

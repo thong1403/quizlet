@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/practice.css" />
+    <title>BOOK</title>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:3000/"
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2021/11/Quizlet-Logo.png"
+            alt="photo"
+            id="img"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="#">Expert solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your library</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn-create"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Create
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-sharp fa-solid fa-copy"></i> Study set</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-folder"></i> Folder</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-user-group"></i> Class</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span class="vip">Upgrade: free 7-day trial</span>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Study sets, textboo..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <button id="notification">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle btn-user"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-sharp fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-user">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Progress</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Upgrade</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Help and feedback</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal -->
+    </nav>
+
+    <div class="container">
+      <h1 class="bach"></h1>
+      <div class="row">
+        <div class="col-3 tolbar">
+          <i class="fa-solid fa-copy"></i>
+          <span class="title-toobar">Flashcards</span>
+        </div>
+        <div class="col-3 tolbar">
+          <i class="fa-solid fa-spinner"></i>
+          <span class="title-toobar">Learn</span>
+        </div>
+        <div class="col-3 tolbar">
+          <i class="fa-solid fa-file"></i>
+          <span class="title-toobar">Test</span>
+        </div>
+        <div class="col-3 tolbar">
+          <i class="fa-solid fa-laptop-file"></i>
+          <span class="title-toobar">Match</span>
+        </div>
+      </div>
+    </div>
+<div class="daada">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide carousel12" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="card" id="flip-btn0">
+              <div id="back0" class="cardBack"><p class="back"><%= data[0].term %> </p></div>
+              <div id="front0" class="cardFront"><p class="front"><%= data[0].definition %></p></div>
+            </div>
+          </div>
+        </div>
+        <% for( let i = 1; i < data.length; i++ ) { %>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="card" id="flip-btn<%=i%>">
+                <div id="back<%=i%>" class="cardBack"><p class="back"><%= data[i].term %> </p></div>
+                <div id="front<%=i%>" class="cardFront"><p class="front"><%= data[i].definition %></p></div>
+              </div>
+            </div>
+          </div>
+        <% } %>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </div>
+  <div class="container toobar">
+    <div class="row">
+      <div class="col-2">
+        <h4 class="title-h4">
+          About us
+        </h4>
+        <h6>
+          About Quizlet
+        </h6>
+        <h6>
+          How Quizlet works
+        </h6>
+        <h6>
+          Careers
+        </h6>
+        <h6>
+          Adventise with us
+        </h6>
+        <h6>
+          News
+        </h6>
+        <h6>
+          Get the app
+        </h6>
+      </div>
+      <div class="col-2">
+        <h4 class="title-h4">For students</h4>
+        <h6>Flashcards</h6>
+        <h6>Learn</h6>
+        <h6>Solutions</h6>
+        
+      </div>
+      <div class="col-2">
+        <h4 class="title-h4">
+          For teachers
+        </h4>
+        <h6>Live</h6>
+        <h6>Checkpoint</h6>
+        <h6>Blog</h6>
+        <h6>Be the Change</h6>
+      </div>
+      <div class="col-2">
+        <h4 class="title-h4">
+          Resources
+        </h4>
+        <h6>
+          Help center
+        </h6>
+        <h6>
+          Honor code
+        </h6>
+        <h6>
+          Comunity guidelines
+        </h6>
+        <h6>Privacy</h6>
+        <h6>Terms</h6>
+        <h6>Ad and Cookie Policy</h6>
+      </div>
+      <div class="col-2">
+        <h4 class="title-h4">
+          Language
+        </h4>
+        <h6>
+          English(USA)
+        </h6>
+      </div>
+    </div>
+    <img src="https://assets.quizlet.com/a/j/dist/app/i/global/footer/coppa-seal.cdf1828279fe2a1.png" alt="photo" class="img-logo">
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/practice.js"></script>
+  </body>
+</html>

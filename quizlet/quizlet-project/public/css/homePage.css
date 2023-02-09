@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: 'Secular One', sans-serif;
+    background-color: #0A092D;
+}
+#img {
+    width: 100px;
+}
+#notification{
+    font-size: 20px;
+    width: 35px;
+    border-radius: 999px;
+}
+#user{
+    font-size: 20px;
+    width: 35px;
+    border-radius: 999px;
+    margin: 10px;
+}
+.vip{
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFCD1F;
+    background-color: #FFCD1F;
+}
+.col-3{
+    width: 420px;
+    display: flex;
+    color: white;
+    background-color: #2E3856;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.div-img{
+    margin-top: 5px;
+}
+.img{
+    width: 100px;
+}
+.col-3 h2{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.title{
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: white;
+}
+.col-3:hover{
+    border-bottom: 7px solid #A8B1FF;
+}
+.dropdown-toggle{
+    background-color: #4255FF;
+    border: 3px solid #4255FF;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+  }
+.dropdown-menu-user {
+    left: -125% !important;
+}
+.btn-create{
+    padding: 5px;
+    width: 100px;
+}
+.btn-user{
+    padding: 5px;
+    width: 70px;
+    background-color: white;
+    color: #2E3856;
+    border: none;
+}
+.col-2{
+    margin: 22px;
+    color: white;
+  }
+  .col-2 h4{
+    margin-bottom: 30px;
+  }
+  .col-2 h6{
+    margin-bottom: 30px;
+  }
+  .img-logo{
+    text-align: right;
+  }
+  .col-2 h4:hover{
+    color: gray;
+  }
+  .col-2 h6:hover{
+    color: gray;
+  }

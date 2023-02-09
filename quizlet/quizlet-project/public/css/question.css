@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: 'Secular One', sans-serif;
+    background-color: #0A092D;
+    color: #fff;
+}
+#img {
+    width: 100px;
+}
+#notification{
+    font-size: 20px;
+    width: 35px;
+    border-radius: 999px;
+}
+#user{
+    font-size: 20px;
+    width: 35px;
+    border-radius: 999px;
+    margin: 10px;
+}
+.vip{
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFCD1F;
+    background-color: #FFCD1F;
+}
+#upload_link{
+    text-decoration:none;
+}
+#upload{
+    display:none
+}
+.top-container{
+   
+    width: 100%;
+    margin-left: 10%;
+    height: 120px;
+    padding: 45px 0px;
+    background-color: #0A092D;
+  
+}
+.top-container .create-new{
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.top-container button{
+    margin-left: 60%;
+    padding: 0.625rem 1rem;
+    background: #4255ff;
+    color: #fff;
+    font-size: .875rem;
+    letter-spacing: normal;
+    line-height: 1.4285714285714286;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    min-height: 2.5rem;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    
+    left: 10%;
+}
+h5{
+    color: white;
+    font-size: 12px;
+}
+.UITextarea-border{
+    align-self: flex-end;
+    display: block;
+    height: 0.25rem;
+    width: 60%;
+    border-bottom: 2px solid white;
+}
+.AutoExpandTextarea-textarea{
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: inherit;
+    display: block;
+    font: inherit;
+    height: 100%;
+    line-height: inherit;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    text-shadow: inherit;
+    width: 60%;
+}
+.container-input{
+    margin-top: 40px;
+}
+.image-input{
+    text-align: center;
+    padding: 40px;
+    background-color: #2e3956;
+    border: 3px dotted;
+    margin-top: 30px;
+}
+.image-input h6{
+    font-size: 24px;
+}
+.AutoExpandTextarea-textarea-question{
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: inherit;
+    display: block;
+    font: inherit;
+    line-height: inherit;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    text-shadow: inherit;
+    width: 200%;
+    margin-bottom: -15px;
+}
+.question{
+    display: flex;
+}
+.UITextarea-border-question{
+    align-self: flex-end;
+    display: block;
+    height: 0.25rem;
+    width: 200%;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+.question-child2 {
+    margin-left: 30%;
+}
+.question-item{
+    padding: 40px;
+    background-color: #2e3956;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.question-item1{
+    padding: 40px;
+    background-color: #2e3956;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.number-list-buttum{
+    float: left;
+    color: black;
+}
+.input-img{
+    margin-left: 380px;
+    border: dotted;
+}
+#upload-image{
+    text-decoration:none;
+}
+#upload-img{
+    display:none
+}
+#button-add{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    height: 120px;
+    padding: 10px;
+    color: white;
+    background-color: #2e3956;
+    border: none;
+    border-bottom: 7px solid rgb(54, 177, 230);
+}
+#button-add:hover{
+    color: yellow;
+    border-bottom: 7px solid yellow;
+    cursor: pointer;
+}
+#create{
+    padding: 15px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 30px;
+    float: right;
+    border-radius: 10px;
+}
+#create:hover{
+    background-color: rgb(28, 140, 231);
+    width: 100px;
+}
+.dropdown-menu-user {
+    left: -250% !important;
+}
+.btn-submit{
+    padding: 15px;
+    border: none;
+    background-color: #2e3956;
+    color: aliceblue;
+    font-size: 20px;
+}

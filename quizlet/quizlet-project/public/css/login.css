@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    background-image: url("https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.divlogin{
+    background-color: rgba(255, 255, 255, 0.224);
+}
+.row{
+    margin-top: 20px;
+    padding: 5px;
+    box-shadow: grey;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.title-left-one{
+    
+    color: blue ;
+}
+#title{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #212529;
+    border-bottom: 5px solid rgb(251, 251, 251);
+}
+#register{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #939BB4;
+    border: none;
+}
+.container-login{
+    padding: 20px;
+    border: 1px solid #D9DDE8;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+.content{
+    font-size: 10px;
+}
+.fa-brands{
+    font-size: 30px;
+    float: left;
+}
+#form{
+    margin: 15px;
+}
+h3{
+    font-size: 15px;
+}
+#email{
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(18, 17, 17);
+    background-color: transparent !important;
+   
+}
+#email:focus{
+    outline: none;
+}
+.container-title{
+    margin-top: 20px;
+    text-align: center ;
+}
+#password{
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(12, 11, 11);
+    background-color: transparent !important;
+}
+#password:focus{
+    outline: none;
+}
+.reset-pass{
+    display: flex;
+    justify-content: space-between
+}
+#reset{
+    color: rgb(64, 64, 224);
+}
+.content-buttom{
+font-size: 12px;
+text-align: center;
+}
+.condition{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+#login{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 20px;
+    background-color: #3CCFCF;
+    border: none;
+    font-size: 25px;
+    color: white;
+}
+.logout-link{
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#link{
+    color: #3FD0D0;
+}
+#register{
+    font-size: 15px;
+    width: 90%;
+    margin: 20px;
+    margin-left: 40px;
+    padding: 15px;
+}
+#createAccount{
+color: #3CCFCF;
+font-size: 20px;
+}

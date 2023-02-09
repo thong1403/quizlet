@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>User</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/profile.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:3000/"
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2021/11/Quizlet-Logo.png"
+            alt="photo"
+            id="img"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/users/solution">Expert solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your library</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn-create"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Craete
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="http://127.0.0.1:3000/study/question/<%= data.id %>  ">
+                    <i class="fa-sharp fa-solid fa-copy"></i> Study set</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-folder"></i> Folder</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-user-group"></i> Class</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span class="vip">Upgrade: free 7-day trial</span>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Study sets, textboo..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <button id="notification">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn-user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-sharp fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-user">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Progress</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Upgrade</a></li>
+                  <li><a class="dropdown-item" href="#">Help and feedback</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal -->
+    </nav>
+    <div class="container" id="bsaa">
+      <div class="row">
+        <div class="col-12">
+          <img
+            src="<%= data.image %> "
+            alt="photo"
+            class="img-user"
+          />
+          <div class="title-name">
+            <h2><%= data.username %> </h2>
+            <h5><%= data.fullname %> </h5>
+            <h5>birthday : <%= data.dateofbirth %> </h5>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Update profile
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Update profile</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <span>Full name</span>
+       <input type="text" class="row lol" value="<%= data.fullname %> ">
+       <span>Email</span>
+       <input type="text" class="row lol" value="<%= data.email %> ">
+       <span>URL image</span>
+       <input type="text" class="row lol" value="<%= data.image %> ">
+       <span>User name</span>
+       <input type="text" class="row lol" value="<%= data.username %> ">
+       <span>Date of Birth</span>
+       <input type="text" class="row lol" value="<%= data.dateofbirth %> ">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
+        <button type="button" class="btn btn-primary" id="btn-update">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="col-12 toolbar">
+          <a href="#" id="achievement">Achievements</a>
+          <a href="#" id="study">Study sets</a>
+          <a href="#" id="solution">Expert solution</a>
+          <a href="#" id="foldera">Folders</a>
+          <a href="#" id="classes">Classes</a>
+        </div>
+        <div class="col-12 containerSearch">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle-buttom"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Recent
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"> Created</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Recent</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#"> Studied</a>
+              </li>
+            </ul>
+          </li>
+          <input type="search" placeholder="Search your sets" id="search" />
+        </div>
+      <!-- <div id="study-set-list"> -->
+       
+        <% for( let i = 0; i < questions.length; i++ ) { %>
+          <div class="col-12 containerUpdate" id="study-set-<%= questions[i].set_id %> ">
+            <div>
+              <span class="title-upload">2 Terms</span>
+              <img
+                src="<%= data.image %>"
+                alt="photo"
+                class="img-user-upload"
+              />
+              <span class="nameUser"><%= data.username %> </span>
+              
+            </div>
+            <h2><%= questions[i].title %> </h2>
+          </div>
+        <% } %>
+        
+      <!-- </div> -->
+      </div>
+    </div>
+    <script src="/js/profile.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/css/question.css" />
+    <title>Home Quiz</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:3000/"
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2021/11/Quizlet-Logo.png"
+            alt="photo"
+            id="img"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:3000/users/solution">Expert solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your library</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Create
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-sharp fa-solid fa-copy"></i> Study sets</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-folder"></i> Folder</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-user-group"></i> Class</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span class="vip">Upgrade: 7-day trila</span>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Study sets, textboo... "
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        </div>
+        <button id="notification">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-user">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:3000/users/profile/<%= dataSet.user_id %>">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Progress</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">Upgrade</a></li>
+                    <li><a class="dropdown-item" href="#">Help and feedback</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    </nav>
+    <form action="" id="form-study-set">
+        <div class="top-container">
+            <span class="create-new">Create a new study set</span>
+            <button id="create-study-set">Create</button>
+        </div>
+        <div class="container">
+    
+        <div class="container-input">
+            <input maxlength="255" value = "<%= dataSet.title %> " placeholder="Enter a title, like “Biology - Chapter 22: Evolution”" tabindex="5" variant="default" class="AutoExpandTextarea-textarea" name="title"></input>
+        </div>
+        <span class="UITextarea-border"></span>
+        <h5>
+            TITLE
+        </h5>
+        <div class="container-input">
+            <input maxlength="255" value="<%= dataSet.description %> " placeholder="Add a description...”" tabindex="5" variant="default" class="AutoExpandTextarea-textarea" name="description"></input>
+        </div>
+        <span class="UITextarea-border"></span>
+        <h5>
+            DESCRIPTION
+        </h5>
+        <div class="image-input">
+            <h6>Add and label a diagram</h6>
+            <p> Drag and drop any image or 
+            <input id="upload" type="file" name="image"/>
+            <a href="#" id="upload_link">choose an image</a></p>
+        </div>
+    </form>
+    <div id="question-big">
+      <% for( let i = 0; i < questionRenderData.length; i++ ) { %>
+        <div>
+          <div id="question-child1">
+            <form action="" id="form-questions-1" class="form-questions">
+                <div class="question-item">
+                  <div class="number-list">
+                    <%= i+1 %> 
+                  </div>
+                  <div class="question">
+                    <div class="question-child1">         
+                      <textarea maxlength="255" name="term1" placeholder="Enter term" tabindex="5" variant="default" class="AutoExpandTextarea-textarea-question">
+                        <%= questionRenderData[i].term %> 
+                      </textarea>
+                      <span class="UITextarea-border-question"></span>
+                      <h5>
+                        TERM
+                      </h5>
+                    </div>
+                    <div class="question-child2">
+                        <textarea maxlength="255" name="defintion1" placeholder="Enter definition" tabindex="5" variant="default" class="AutoExpandTextarea-textarea-question">
+                        <%= questionRenderData[i].definition %> 
+                        </textarea>
+                      <span class="UITextarea-border-question"></span>
+                      <h5>
+                        DEFINITION
+                      </h5>
+                    </div>
+                    <div class="input-img">
+                        <button class="btn-submit" id="btn-submit">
+                          Submit
+                        </button>
+                    </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      <% } %>
+    </div>
+            <div class="question-item1" id="button-add">
+                <p>+ ADD CARD</p>
+            </div>
+        </div>
+      </div>
+      
+    <script src="/js/question.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

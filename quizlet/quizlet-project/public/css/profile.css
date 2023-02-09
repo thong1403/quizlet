@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+  font-family: 'Secular One', sans-serif;
+    background-color: #0A092D;
+}
+#img {
+    width: 100px;
+}
+#notification{
+    font-size: 20px;
+    width: 35px;
+    border-radius: 999px;
+}
+#user{
+    font-size: 20px;
+    width: 35px;
+    border-radius: 999px;
+    margin: 10px;
+}
+.vip{
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFCD1F;
+    background-color: #FFCD1F;
+}
+.col-3{
+    width: 420px;
+    display: flex;
+    color: white;
+    background-color: #2E3856;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.div-img{
+    margin-top: 5px;
+}
+.img{
+    width: 100px;
+}
+.col-3 h2{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.title{
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: white;
+}
+.col-3:hover{
+    border-bottom: 7px solid #A8B1FF;
+}
+.dropdown-toggle{
+    background-color: #4255FF;
+    border: 3px solid #4255FF;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+  }
+  .col-12{
+    margin-top: 50px;
+    color: white;
+    display: flex;
+  }
+  .img-user{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+  .title-name{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  #achievement{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+
+  }
+  #achievement:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+  }
+  #study{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+
+  }#study:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+  }
+  #solution{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+
+  }
+  #solution:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+  }
+#foldera{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+
+}
+#foldera:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+#classes{
+
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+
+}
+#classes:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+.toolbar{
+    
+    border-bottom: 2px solid white;
+}
+.dropdown{
+    list-style-type: none;
+}
+ .dropdown-toggle-buttom{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    background-color: #0A092D;
+    border: 1px solid white;
+    border-radius: 10px;
+ }
+ .containerSearch{
+    padding-bottom: 60px;
+    padding: auto;
+    border-bottom: 2px solid white;
+ }
+ .img-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+ }
+ .containerUpdate{
+    border: 1px solid #2E3856;
+    background-color: #2E3856;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    height: 200px;
+    display: table-column;
+    
+ }
+ .img-user-upload{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-left: 20px;
+ }
+ .title-upload{
+    padding-right: 10px;
+    border-right: 5px solid black;
+ }
+ .nameUser{
+    color: #3ACFCF;
+    font-size: 20px;
+ }
+ .col-12 #search{
+    width: 1000px;
+     margin-left: 50%;
+   border-radius: 10px;
+   padding-left: 20px;
+   background-color: #2E3856;
+   color: white;
+ }
+ ::placeholder{
+    color: white;
+ }
+ .containerUpdate:hover{
+    border-bottom: 10px solid #CEDAF3;
+ }
+ .dropdown-menu-user {
+    left: -125% !important;
+}
+.btn-create{
+  padding: 5px;
+  width: 100px;
+}
+.btn-user{
+  padding: 5px;
+  width: 70px;
+  background-color: white;
+  color: #2E3856;
+  border: none;
+}
+.lol{
+  width: 100%;
+  margin: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+}
+.lol :focus{
+  outline: none;
+}
